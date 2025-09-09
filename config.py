@@ -9,7 +9,7 @@ class Config:
 
     batch_size = 128
     learning_rate = 0.1
-    num_epochs = 50
+    num_epochs = 1
     momentum = 0.9
     weight_decay = 5e-4
 
