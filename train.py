@@ -70,7 +70,7 @@ def train():
 
         pbar = tqdm(train_loader, desc=f'Epoch {epoch + 1}/{config.num_epochs}')
         for batch_idx, (inputs, targets) in enumerate(pbar):
-            #1 inputs & target移动到指定设备
+            #1 inputs & targets移动到指定设备
             inputs, targets = inputs.to(config.device), targets.to(config.device)
             #2 每个batch之前进行梯度清零
             optimizer.zero_grad()
